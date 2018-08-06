@@ -1,0 +1,54 @@
+slots:
+  Variety:
+    type: text
+
+intents:
+  - greet
+  - help
+  - goodbye
+  - inform
+  - get_price
+  - get_country
+  - get_rating
+
+entities:
+  - Variety
+
+templates:
+  utter_greet:
+    - 'Hello! How can I help?'
+    - 'Hi there! What can I do for you?'
+    - 'Winy here! How can I help?'
+  utter_help:
+    - 'Hello, my name is Winy! I can give you details about wine. You can ask
+me the price, country and description of any wine. Here are some you can choose
+from:
+Cabernet Sauvignon
+Tinta de Toro
+Sauvignon Blanc
+Pinot Noir
+Provence red blend
+Friulano
+Tannat
+Chardonnay
+Tempranillo
+Malbec'
+  utter_goodbye:
+    - 'Talk to you later'
+    - 'Bye bye :('
+    - 'Talk to you soon'
+  utter_ask_Variety:
+    - 'For which wine?'
+    - 'Do you have some variety in mind?'
+    - 'Alright! Which variety shall I bring up?'
+    - 'Sure! What wine are you looking for?'
+
+actions:
+  - utter_greet
+  - actions.ActionHelp
+  - utter_goodbye
+  - utter_ask_Variety
+  - actions.ActionVariety
+  - actions.ActionPrice
+  - actions.ActionCountry
+  - actions.ActionRating
