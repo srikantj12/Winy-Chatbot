@@ -1,0 +1,615 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Help",
+        "intent": "help",
+        "entities": []
+      },
+      {
+        "text": "Help!",
+        "intent": "help",
+        "entities": []
+      },
+      {
+        "text": "help!",
+        "intent": "help",
+        "entities": []
+      },
+      {
+        "text": "info",
+        "intent": "help",
+        "entities": []
+      },
+      {
+        "text": "What can you do?",
+        "intent": "help",
+        "entities": []
+      },
+      {
+        "text": "What can I ask you?",
+        "intent": "help",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Can you tell me about some wine?",
+        "intent": "inform",
+        "entities": []
+      },
+      {
+        "text": "I would like to know about some wine",
+        "intent": "inform",
+        "entities": []
+      },
+      {
+        "text": "How is the Pinot Noir wine like?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "Pinot Noir ",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me about Pinot Noir?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "Pinot Noir ",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I would like to know something about Pinot Noir",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 37,
+            "end": 47,
+            "value": "Pinot Noir ",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me something about Pinot Noir?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 32,
+            "end": 42,
+            "value": "Pinot Noir ",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me the rating of Pinot Noir?",
+        "intent": "get_rating",
+        "entities": [
+          {
+            "start": 30,
+            "end": 40,
+            "value": "Pinot Noir ",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "What is the rating of Chardonnay?",
+        "intent": "get_rating",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "Chardonnay",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "How is Sangiovese rated?",
+        "intent": "get_rating",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "Sangiovese",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "How popular is Sangiovese?",
+        "intent": "get_rating",
+        "entities": [
+          {
+            "start": 15,
+            "end": 25,
+            "value": "Sangiovese",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me about Pinot Noir variety?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "Pinot Noir ",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I would like to know something about the Pinot Noir variety?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 41,
+            "end": 51,
+            "value": "Pinot Noir ",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "What does Malbec taste like?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me about Malbec?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I would like to know about Malbec",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me about the Malbec variety?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "How is Chardonnay wine like?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "Chardonnay",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me about Chardonnay?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "Chardonnay",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I would like to know about Chardonnay",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 27,
+            "end": 37,
+            "value": "Chardonnay",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Give me details about Sparkling Blend!",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "value": "Sparkling Blend",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me about Sparkling Blend?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "value": "Sparkling Blend",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I would like some details about Sparkling Blend",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 32,
+            "end": 47,
+            "value": "Sparkling Blend",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I wonder how Red Blend wine is! Can you provide details?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "Red Blend",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "What can you tell me about Red Blend wine?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 27,
+            "end": 36,
+            "value": "Red Blend",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "How is Sangiovese wine?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "Sangiovese",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "What is the Sangiovese wine like?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 12,
+            "end": 22,
+            "value": "Sangiovese",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Tell me the details about Malbec?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Is the Sangiovese nice?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "Sangiovese",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I am going to market today and I wonder what is the Nebbiolo tastes like ?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 52,
+            "end": 60,
+            "value": "Nebbiolo",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "I am planning a house party today , how's the wine Assyrtiko like?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 51,
+            "end": 60,
+            "value": "Assyrtiko",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Tell me the price of Riesling, please!",
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "Riesling",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "of Merlot?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Merlot",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Garganega?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Garganega",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Oh, sorry, Sherry!",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Sherry",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Tell me the details of Chardonnay Variety of Hat Ranch winery?",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "Chardonnay",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "How much does Malbec cost?",
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 14,
+            "end": 20,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me where Chardonnay is made?",
+        "intent": "get_country",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "Chardonnay",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me where Pinot Noir is made?",
+        "intent": "get_country",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "Pinot Noir",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Where is Malbec from?",
+        "intent": "get_country",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Where is Sangiovese from?",
+        "intent": "get_country",
+        "entities": [
+          {
+            "start": 9,
+            "end": 19,
+            "value": "Sangiovese",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "Can you tell me how much Chardonnay costs?",
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 25,
+            "end": 35,
+            "value": "Chardonnay",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "What is the price of Garganega?",
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "Garganega",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "What is the cost of Malbec wine?",
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "Malbec",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "How expensive is Sangiovese?",
+        "intent": "get_price",
+        "entities": [
+          {
+            "start": 17,
+            "end": 27,
+            "value": "Sangiovese",
+            "entity": "Variety"
+          }
+        ]
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "heya",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Alright take care :)",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "see ya",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "see you later",
+        "intent": "goodbye",
+        "entities": []
+      }
+    ]
+  }
+}
